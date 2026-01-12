@@ -29,6 +29,8 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -701,6 +703,10 @@ body {
 
 .social-btn:last-child {
     background: var(--accent-color);
+}
+
+.social-btn:hover {
+    box-shadow: var(--shadow-hover);
 }
 
 .contact-form {
