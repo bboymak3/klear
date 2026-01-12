@@ -9,7 +9,6 @@
     --bg-dark: #34495e;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
-    --transition: all 0.3s ease;
 }
 
 /* Reset y Estilos Base */
@@ -24,7 +23,9 @@ html {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial Black', 'Arial Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
@@ -45,7 +46,6 @@ body {
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
 .navbar {
@@ -87,7 +87,6 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: all 0.3s ease;
     position: relative;
 }
 
@@ -103,7 +102,6 @@ body {
     width: 0;
     height: 2px;
     background: #e74c3c;
-    transition: all 0.3s ease;
 }
 
 .nav-menu-desktop a:hover::after {
@@ -126,15 +124,10 @@ body {
     padding: 10px 0;
     display: none;
     z-index: 1001;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .dropdown-menu a {
@@ -143,7 +136,6 @@ body {
     text-decoration: none;
     color: #333;
     border-bottom: 1px solid #f0f0f0;
-    transition: all 0.3s ease;
     font-size: 0.95rem;
 }
 
@@ -168,14 +160,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 .whatsapp-btn-nav:hover {
     background: #20B358;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 /* Hamburguesa */
@@ -197,9 +186,6 @@ body {
     height: 3px;
     background: #333;
     border-radius: 2px;
-    transition: all 0.3s ease;
-    display: block;
-    transform-origin: center;
 }
 
 .hamburger.active span:nth-child(1) {
@@ -208,7 +194,6 @@ body {
 
 .hamburger.active span:nth-child(2) {
     opacity: 0;
-    transform: translateX(20px);
 }
 
 .hamburger.active span:nth-child(3) {
@@ -224,7 +209,6 @@ body {
     height: calc(100vh - 80px);
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
     overflow-y: auto;
     z-index: 999;
     padding: 0;
@@ -244,7 +228,6 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     border-bottom: 1px solid #f0f0f0;
-    transition: all 0.3s ease;
 }
 
 .mobile-link:hover {
@@ -271,7 +254,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
 }
 
 .mobile-dropdown-btn:hover {
@@ -289,7 +271,6 @@ body {
 .mobile-dropdown-menu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
     background: #f8f9fa;
 }
 
@@ -304,7 +285,6 @@ body {
     color: #666;
     font-size: 1rem;
     border-bottom: 1px solid #e9ecef;
-    transition: all 0.3s ease;
 }
 
 .mobile-sublink:hover {
@@ -329,14 +309,11 @@ body {
     font-weight: bold;
     text-align: center;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 .whatsapp-btn-mobile:hover {
     background: #20B358;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 /* Hero Section */
@@ -391,7 +368,6 @@ body {
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    transition: var(--transition);
     display: inline-block;
 }
 
@@ -402,8 +378,6 @@ body {
 
 .btn-primary:hover {
     background: #c0392b;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
 }
 
 .btn-secondary {
@@ -460,16 +434,10 @@ body {
     background: var(--bg-light);
     border-radius: 10px;
     overflow: hidden;
-    transition: var(--transition);
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
 }
 
 .service-image {
@@ -490,13 +458,8 @@ body {
     height: auto;
     object-fit: contain;
     object-position: center;
-    transition: var(--transition);
     display: block;
     border-radius: 8px;
-}
-
-.service-card:hover .service-image img {
-    transform: scale(1.05);
 }
 
 .service-content {
@@ -657,11 +620,6 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.faq-item:hover {
-    box-shadow: var(--shadow-hover);
 }
 
 .faq-item h3 {
@@ -714,7 +672,6 @@ body {
 .contact-item a {
     color: var(--text-dark);
     text-decoration: none;
-    transition: var(--transition);
 }
 
 .contact-item a:hover {
@@ -733,7 +690,6 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    transition: var(--transition);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -745,11 +701,6 @@ body {
 
 .social-btn:last-child {
     background: var(--accent-color);
-}
-
-.social-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-hover);
 }
 
 .contact-form {
@@ -770,7 +721,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
-    transition: var(--transition);
 }
 
 .form-group input:focus,
@@ -823,7 +773,6 @@ body {
 .footer-links a {
     color: var(--text-light);
     text-decoration: none;
-    transition: var(--transition);
 }
 
 .footer-links a:hover {
@@ -863,25 +812,10 @@ body {
     font-size: 24px;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    transition: all 0.3s ease;
-    animation: pulse 2s infinite;
 }
 
 .whatsapp-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    }
-    50% {
-        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
-    }
-    100% {
-        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    }
 }
 
 /* Responsive Design */
