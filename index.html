@@ -361,37 +361,35 @@
                         </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Tu Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono" required>
-                        </div>
-                        <div class="form-group">
-                            <select id="service" name="service" required>
-                                <option value="">Selecciona un Servicio</option>
-                                <option value="corte-completo">Corte Completo + Lavado + Cejas</option>
-                                <option value="afeitado-vapor">Corte Clásico + Afeitado con Vapor</option>
-                                <option value="colorimetria">Colorimetría Personalizada</option>
-                                <option value="permanente">Permanente + Corte Estilizado</option>
-                                <option value="barber-art">Diseños Creativos & Barber Art</option>
-                                <option value="tratamiento-capilar">Tratamiento Capilar Intensivo</option>
-                                <option value="diseno-barba">Diseño de Barba + Afeitado Precisión</option>
-                                <option value="decoloracion">Decoloración Controlada + Color</option>
-                                <option value="alisado-keratina">Alisado Keratina + Corte</option>
-                                <option value="spa-facial">Ritual Completo Spa Facial</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="4" placeholder="Mensaje adicional (opcional)"></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Enviar Solicitud</button>
-                    </form>
+                <form id="contactForm">
+    <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Tu Nombre" required autocomplete="name">
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Tu Email" required autocomplete="email">
+    </div>
+    <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono" required autocomplete="tel">
+    </div>
+    <div class="form-group">
+        <select id="service" name="service" required autocomplete="off">
+            <option value="">Selecciona un Servicio</option>
+            <option value="corte-completo">Corte Completo + Lavado + Cejas</option>
+            <option value="afeitado-vapor">Corte Clásico + Afeitado con Vapor</option>
+            <option value="colorimetria">Colorimetría Personalizada</option>
+            <option value="permanente">Permanente + Corte Estilizado</option>
+            <option value="barber-art">Diseños Creativos & Barber Art</option>
+            <option value="tratamiento-capilar">Tratamiento Capilar Intensivo</option>
+            <option value="diseno-barba">Diseño de Barba + Afeitado Precisión</option>
+            <option value="decoloracion">Decoloración Controlada + Color</option>
+            <option value="alisado-keratina">Alisado Keratina + Corte</option>
+            <option value="spa-facial">Ritual Completo Spa Facial</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <textarea id="message" name="message" rows="4" placeholder="Mensaje adicional (opcional)" autocomplete="off"></textarea>
+    </div>
+    <but
                 </div>
             </div>
         </div>
