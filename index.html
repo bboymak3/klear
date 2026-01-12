@@ -11,29 +11,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="images/loga2.png" alt="KLEAR STUDIO Logo">
-                    <span>🔴🔵⚪ KLEAR STUDIO</span>
+   <!-- Header con Menú Hamburguesa -->
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#inicio" class="logo">
+                <img src="images/loga2.png" alt="KLEAR STUDIO Logo">
+                <div>
+                    <div style="font-weight: bold; line-height: 1.2;">🔴🔵⚪ KLEAR STUDIO</div>
+                    <div style="font-size: 0.9em; line-height: 1.2;">TOP BARBER SHOP</div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proceso">Proceso</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            </a>
+            
+            <!-- Menú Principal (Desktop) -->
+            <div class="nav-menu-desktop">
+                <a href="#inicio" style="text-decoration: none; color: #333; font-weight: 500;">Inicio</a>
+                
+                <!-- Dropdown SERVICIOS -->
+                <div class="dropdown">
+                    <a href="#servicios" style="text-decoration: none; color: #e74c3c; font-weight: bold; display: flex; align-items: center;">
+                        Servicios <span style="margin-left: 5px;">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#servicios">Corte Completo + Lavado + Cejas</a>
+                        <a href="#servicios">Afeitado con Vapor + Corte</a>
+                        <a href="#servicios">Colorimetría Personalizada</a>
+                        <a href="#servicios">Permanente + Corte Estilizado</a>
+                        <a href="#servicios">Diseños Creativos & Barber Art</a>
+                        <a href="#servicios">Tratamiento Capilar Intensivo</a>
+                        <a href="#servicios">Diseño de Barba + Afeitado</a>
+                        <a href="#servicios">Decoloración + Color Personalizado</a>
+                        <a href="#servicios">Alisado Keratina + Corte</a>
+                        <a href="#servicios">Spa Facial Masculino</a>
+                    </div>
+                </div>
+                
+                <a href="#proceso" style="text-decoration: none; color: #333; font-weight: 500;">Proceso</a>
+                <a href="#faq" style="text-decoration: none; color: #333; font-weight: 500;">FAQ</a>
+                <a href="#contacto" style="text-decoration: none; color: #333; font-weight: 500;">Contacto</a>
+                
+                <!-- WhatsApp -->
+                <a href="https://wa.me/+56951947706" target="_blank" class="whatsapp-btn-nav">
+                    <span>📱</span> WhatsApp
+                </a>
+            </div>
+            
+            <!-- Menú Hamburguesa (Móvil) -->
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Menú Móvil -->
+        <div class="nav-menu-mobile">
+            <a href="#inicio" class="mobile-link">Inicio</a>
+            
+            <!-- Dropdown Servicios Móvil -->
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-btn">
+                    Servicios <span>▼</span>
+                </button>
+                <div class="mobile-dropdown-menu">
+                    <a href="#servicios" class="mobile-sublink">Corte Completo + Lavado + Cejas</a>
+                    <a href="#servicios" class="mobile-sublink">Afeitado con Vapor + Corte</a>
+                    <a href="#servicios" class="mobile-sublink">Colorimetría Personalizada</a>
+                    <a href="#servicios" class="mobile-sublink">Permanente + Corte Estilizado</a>
+                    <a href="#servicios" class="mobile-sublink">Diseños Creativos & Barber Art</a>
+                    <a href="#servicios" class="mobile-sublink">Tratamiento Capilar Intensivo</a>
+                    <a href="#servicios" class="mobile-sublink">Diseño de Barba + Afeitado</a>
+                    <a href="#servicios" class="mobile-sublink">Decoloración + Color Personalizado</a>
+                    <a href="#servicios" class="mobile-sublink">Alisado Keratina + Corte</a>
+                    <a href="#servicios" class="mobile-sublink">Spa Facial Masculino</a>
                 </div>
             </div>
-        </nav>
-    </header>
+            
+            <a href="#proceso" class="mobile-link">Proceso</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+            
+            <!-- WhatsApp Móvil -->
+            <a href="https://wa.me/+56951947706" target="_blank" class="whatsapp-btn-mobile">
+                <span>📱</span> WhatsApp
+            </a>
+        </div>
+    </nav>
+</header>
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
